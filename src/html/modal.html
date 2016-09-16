@@ -1,0 +1,41 @@
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4>{{tasktitle}}</h4>
+    </div>
+    <div class="modal-body">
+      <h4>Currently elapsed time: <b>{{elapsedTime}}</b> = <b>{{convertedTime}}</b></h4>
+      <p>Comments</p>
+      <p><textarea id="harvest-jira-comment"></textarea><p>
+      <p><b style="text-decoration:underline;">Previous time entries</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Created date</th><th>Time spent</th><th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each worklogs}}
+          <tr>
+            <td>{{date}}</td><td>{{timeSpent}}</td><td>{{comment}}</td>
+          </tr>
+          {{else}}
+          <tr>
+            <td colspan='3' style='text-align:center'>There are no previous time entries</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <br/>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button id="btnLogWork" type="button"
+              class="btn btn-primary"
+              data-jira-base-url="{{dataJiraBaseUrl}}"
+              data-jira-task-id="{{dataJiraTaskId}}"
+              data-harvest-time-spent="{{convertedTime}}">Log work</button>
+    </div>
+  </div>
+</div>
