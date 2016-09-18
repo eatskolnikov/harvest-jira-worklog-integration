@@ -10,7 +10,7 @@ Let's say you worked on a task for one hour and 6 minutes
 - In harvest you would get something like: 1.10
 - In JIRA you would have to calculate the equivalent of that number to the exact time, to get something like: 1h 6m
 
-It get's pretty annoying, wasting time to calculate mere minutes, with this tool all you have to do is click two buttons and you're set. No more wasting time writing the time down.
+It get's pretty annoying to waste time calculating mere minutes, with this tool all you have to do is click two buttons and you're set. No more wasting time writing the time down.
 
 ## Installing from Source
 
