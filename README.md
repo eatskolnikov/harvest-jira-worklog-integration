@@ -8,4 +8,4 @@ This idea came up after wasting a lot of time moving the tracked time from harve
 
 The application icon was taken from [Fontawesome](http://fontawesome.io)
 
-Ironically some of the code was taken from [Toggle button](https://github.com/toggl/toggl-button)
+Ironically some of the code was taken from [Toggl button](https://github.com/toggl/toggl-button)
