@@ -77,6 +77,15 @@ harvestJiraButton = {
             data.worklogs[i]['date'] = data.worklogs[i]['date'].substr(0,
                 data.worklogs[i]['date'].indexOf('T'));
           }
+          data.worklogs.sort(function(a, b){
+            var createdA =  new Date(a.created)
+            var createdB =  new Date(b.created)
+            if (createdA < createdB)
+              return -1;
+            if (createdB > createdA)
+              return 1;
+            return 0;
+          });
           var hours = Math.floor(harvestTimeSpent);
           var minutes = Math.ceil((harvestTimeSpent - hours)*60.0);
           var convertedTime = hours +"h "+minutes+"m";
