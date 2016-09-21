@@ -1,5 +1,5 @@
 # harvest-jira-worklog-integration
-Puts a button in Harvest that lets you log your harvest time directly into JIRA
+Adds a button in Harvest that lets you import your Harvest logged time directly into JIRA
 
 
 This idea came up after wasting a lot of time moving the tracked time from harvest to JIRA tasks. You see, JIRA and Harvest measure time differently. 
