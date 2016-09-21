@@ -1,7 +1,7 @@
 {
   "name": "Harvest/Jira worklog integration",
   "short_name": "Harvest/JIRA worklog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "Puts a button in Harvest that let's you log your harvest time directly into JIRA",
   "background": {
